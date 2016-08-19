@@ -1,0 +1,18 @@
+ http://loudbard-dev.xululabs.us
+========================================
+
+http://loudbard-dev.xululabs.us/restchannel/user/login
+..Key..          ..Value..
+Content-Type       application/json
+In json write the following ..
+{"username":"admin","password":"admin"}
+--------------------------------------------------------------------------------------------------------------
+Creating node using post method
+http://loudbard-dev.xululabs.us/restchannel/node
+..Key..        ..Value..
+Content-Type  application/json
+X-CSRF-Token   token-value
+In raw data put data like this for article type.
+{"title":"test from postman",
+"type":"article",
+"body":{"und":[{"value":"body of test article"}]}}
